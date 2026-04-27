@@ -62,8 +62,13 @@ Data is cleaned and preprocessed for better recommendation performance.
 ## 📁 Project Structure
 
 ├── movie_recommandation.ipynb # Model building & analysis,
+
 ├── movie.pkl # Processed movie data,
+
 ├── tfidf.pkl # TF-IDF model,
+
 ├── tfidf_matrix.pkl # Vectorized matrix,
+
 ├── indices.pkl # Movie index mapping,
+
 ├── app.py (optional) # For deployment (Streamlit/API)

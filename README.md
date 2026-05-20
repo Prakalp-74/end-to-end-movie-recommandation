@@ -1,26 +1,26 @@
-# 🎬 End-to-End Movie Recommendation System
+#  End-to-End Movie Recommendation System
 
 An end-to-end **Movie Recommendation System** built using **Data Science & Machine Learning techniques**, designed to provide personalized movie suggestions.
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 This system recommends movies similar to a given movie using **content-based filtering**. It analyzes movie metadata such as genres, overview, and tags to compute similarity between movies.
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
-- 🔍 Search any movie and get top recommendations  
-- 🎯 Content-based recommendation using NLP techniques  
-- ⚡ Fast similarity computation using vectorization  
-- 💾 Model serialization using `pickle`  
-- 🌐 Ready for frontend integration (Streamlit / API)  
+-  Search any movie and get top recommendations  
+-  Content-based recommendation using NLP techniques  
+-  Fast similarity computation using vectorization  
+-  Model serialization using `pickle`  
+-  Ready for frontend integration (Streamlit / API)  
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Programming Language:** Python  
 - **Libraries:**  
@@ -35,7 +35,7 @@ This system recommends movies similar to a given movie using **content-based fil
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains:
 
@@ -49,7 +49,7 @@ Data is cleaned and preprocessed for better recommendation performance.
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. Data preprocessing (handling null values, selecting important features)  
 2. Combining relevant columns into a single feature  
@@ -59,7 +59,7 @@ Data is cleaned and preprocessed for better recommendation performance.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ├── movie_recommandation.ipynb # Model building & analysis,
 

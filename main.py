@@ -5,26 +5,26 @@ import os
 
 app = FastAPI()
 
-# Load files
+
 BASE_DIR = os.path.dirname(__file__)
 
 movies = pickle.load(open(os.path.join(BASE_DIR, "movie.pkl"), "rb"))
 indices = pickle.load(open(os.path.join(BASE_DIR, "indices.pkl"), "rb"))
 tfidf_matrix = pickle.load(open(os.path.join(BASE_DIR, "tfidf_matrix.pkl"), "rb"))
 
-# Normalize titles
+
 def normalize(title):
     return title.strip().lower()
 
-# Convert indices to dictionary
+
 if not isinstance(indices, dict):
     indices = {k: int(v) for k, v in indices.items()}
 
-# Normalize keys
+
 indices = {normalize(k): v for k, v in indices.items()}
 
 
-# 🔥 Recommendation function (CORRECT FOR YOUR MODEL)
+
 def recommend(movie, top_n=5):
     movie = normalize(movie)
 
@@ -33,11 +33,11 @@ def recommend(movie, top_n=5):
 
     idx = indices[movie]
 
-    # Compute similarity
+
     query_vec = tfidf_matrix[idx]
     scores = (tfidf_matrix @ query_vec.T).toarray().ravel()
 
-    # Sort scores
+ 
     sorted_indices = np.argsort(-scores)
 
     recommendations = []
